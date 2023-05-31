@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -64,6 +64,15 @@ header {
   color: #fff;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+}
+
 header nav ul li {
   list-style-type: none;
 }
@@ -81,8 +90,17 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  display: flex;
+  flex-direction: column;
   border: 2px solid #ff385c;
   padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form .input {
+  display: flex;
+  justify-content: space-between;
 }
 
 form label {
@@ -117,3 +135,35 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .logo {
+    margin-top: 5px;
+  }
+
+  header nav {
+    margin-top: 18px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid #ff385c;
+    padding: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  form .input {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+  }
+}
