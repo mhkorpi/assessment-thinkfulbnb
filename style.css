@@ -135,7 +135,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -156,14 +156,31 @@ footer p {
     flex-wrap: wrap;
     border: 2px solid #ff385c;
     padding: 10px;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   form .input {
     display: flex;
     padding: 5px;
+    flex-direction: column;
     justify-content: space-between;
   }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .item-double {
+    flex: 2;
+  }
+
 }
