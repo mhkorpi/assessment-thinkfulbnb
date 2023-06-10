@@ -60,8 +60,9 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 48px;
   color: #fff;
+  width: 100%;
 }
 
 header nav {
@@ -186,5 +187,11 @@ footer p {
   .item-double {
     flex: 2;
   }
+}
 
+@media all and (min-width: 400px) {
+
+  .logo {
+    font-size: 72px;
+  }
 }
