@@ -142,6 +142,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+    text-align: left;
   }
 }
 
@@ -149,6 +150,7 @@ footer p {
 
   .logo {
     margin-top: 5px;
+    justify-content: start;
   }
 
   header nav {
